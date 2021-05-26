@@ -48,6 +48,20 @@ namespace apiLilab.Controllers
             }
         }
 
+        // GET api/<ProductoController>/5
+        [HttpGet("cat/{id}", Name = "GetProductoxCategoria")]
+        public ActionResult GetxCat(int id) 
+        {
+            try 
+            {
+                var producto = context.TbProductos.OrderBy(c => c.IdCategoria == id).ToList();
+                return Ok(producto);
+            } catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         // POST api/<ProductoController>
         [HttpPost]
         public ActionResult Post([FromBody] TbProducto producto)

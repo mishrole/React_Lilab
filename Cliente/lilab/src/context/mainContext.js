@@ -6,11 +6,11 @@ const MainContext = createContext();
 
 const MainContextProvider = ({ children }) => {
     
-    const { state: { data: products } } = useFetchProducts();
-    const { state: { data: categories } } = useFetchCategories();
+    const { products } = useFetchProducts();
+    const { categories } = useFetchCategories();
 
     return (
-        <MainContext.Provider value={ { products, categories } }>
+        <MainContext.Provider value={ { categories, products } }>
             { children }
         </MainContext.Provider>
     )

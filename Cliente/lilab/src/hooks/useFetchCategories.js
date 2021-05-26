@@ -3,8 +3,8 @@ import { getCategories } from '../helpers/getCategories';
 
 export const useFetchCategories = () => {
     
-    const [state, setState] = useState({
-        data: [],
+    const [category, setCategory] = useState({
+        categories: [],
         loading: true
     });
 
@@ -12,12 +12,12 @@ export const useFetchCategories = () => {
     useEffect(() => {
         getCategories()
         .then(category => {
-            setState({
-                data: category,
+            setCategory({
+                categories: category,
                 loading: false
             })
         })
-    }, [])
+    }, []);
 
-    return state;
+    return category;
 }

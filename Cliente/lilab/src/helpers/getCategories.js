@@ -10,7 +10,7 @@ export const getCategories = async () => {
             title: category.nombreCategoria
         }
     });
-
+    
     // Regresa una promesa que resuelve la colección
     return categories;
 

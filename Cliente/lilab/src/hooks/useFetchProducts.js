@@ -3,21 +3,21 @@ import { getProducts } from '../helpers/getProducts';
 
 export const useFetchProducts = (category) => {
     
-    const [state, setState] = useState({
-        data: [],
+    const [product, setProduct] = useState({
+        products: [],
         loading: true
     });
 
     // Los efectos no pueden ser async porque esperan algo síncrono
     useEffect(() => {
         getProducts(category)
-        .then(products => {
-            setState({
-                data: products,
+        .then(product => {
+            setProduct({
+                products: product,
                 loading: false
             })
         })
-    }, [category])
+    }, [])
 
-    return state;
+    return product;
 }

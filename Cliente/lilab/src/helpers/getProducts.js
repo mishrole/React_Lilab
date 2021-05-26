@@ -15,7 +15,7 @@ export const getProducts = async ( category ) => {
             category: product.idCategoria,
         }
     });
-
+    
     // Regresa una promesa que resuelve la colección
     return products;
 

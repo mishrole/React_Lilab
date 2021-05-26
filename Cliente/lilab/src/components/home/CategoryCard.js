@@ -7,7 +7,7 @@ export const CategoryCard = ( { category }) => {
     const history = useHistory();
 
     const handleClick = (categoryId) => () => {
-        history.push(generatePath("/product/:productId", { categoryId }));   
+        history.push(generatePath("/category/:categoryId", { categoryId }));   
     }
 
     return (
