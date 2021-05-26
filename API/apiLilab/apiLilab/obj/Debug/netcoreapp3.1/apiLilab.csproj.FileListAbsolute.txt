@@ -1,0 +1,4 @@
+C:\Users\Mitchell\Desktop\Lilab\API\apiLilab\apiLilab\obj\Debug\netcoreapp3.1\apiLilab.AssemblyInfoInputs.cache
+C:\Users\Mitchell\Desktop\Lilab\API\apiLilab\apiLilab\obj\Debug\netcoreapp3.1\apiLilab.AssemblyInfo.cs
+C:\Users\Mitchell\Desktop\Lilab\API\apiLilab\apiLilab\obj\Debug\netcoreapp3.1\apiLilab.csproj.CoreCompileInputs.cache
+C:\Users\Mitchell\Desktop\Lilab\API\apiLilab\apiLilab\obj\Debug\netcoreapp3.1\apiLilab.MvcApplicationPartsAssemblyInfo.cache

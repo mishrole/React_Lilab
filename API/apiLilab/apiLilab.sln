@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiLilab", "apiLilab\apiLilab.csproj", "{348633D5-7FB9-4838-92FD-5F14F776351B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{348633D5-7FB9-4838-92FD-5F14F776351B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348633D5-7FB9-4838-92FD-5F14F776351B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348633D5-7FB9-4838-92FD-5F14F776351B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348633D5-7FB9-4838-92FD-5F14F776351B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1FFEC77-C8CC-49BD-AE66-2F82EEE79E3C}
+	EndGlobalSection
+EndGlobal
