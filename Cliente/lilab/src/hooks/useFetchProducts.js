@@ -17,7 +17,7 @@ export const useFetchProducts = (category) => {
                 loading: false
             })
         })
-    }, [])
+    }, [category])
 
     return product;
 }

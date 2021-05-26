@@ -19,15 +19,9 @@ export const ProductGridPage = () => {
                 </Navbar>
             <Container>
                 <Row>
-                    {
-                        categories.map((category, index) => {
-                            return (
-                                <Col className="mt-4 mb-4" xs = { 12 } sm = { 6 } lg = { 4 } key = { `productContrainer-${ index }` }>
-                                    <ProductGrid category = { category }/>
-                                </Col>
-                            )
-                        })
-                    }
+                    <Col className="mt-4 mb-4" xs = { 12 }>
+                        <ProductGrid category = { window.location.pathname }/>
+                    </Col>
                 </Row>
             </Container>
         </>
