@@ -12,11 +12,8 @@ export const CategoryCard = ( { category }) => {
 
     return (
         <Card className="text-center">
-            <Card.Header>{ category.id }</Card.Header>
+            <Card.Header>{ category.title }</Card.Header>
             <Card.Body>
-                <Card.Title> { category.title }</Card.Title>
-                <Card.Text>
-                </Card.Text>
             </Card.Body>
             <Card.Footer className="text-muted">
                 <Button variant="primary" onClick = { handleClick(category.id) }>Ver {category.title}</Button>

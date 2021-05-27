@@ -1,20 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Card, CardGroup, Container, Row, Col, Button } from 'react-bootstrap';
 
 export const ProductGridItem = ( {title, description, price, stock, url} ) => {
 
     return (
-        <div className="card animate__animated animate__fadeIn animate__delay-1s">
-            <div className="card__image">
-                <img src={url} alt={title} />
-            </div>
-            <div className="card__title">
-                <p>{title}</p>
-                <p>{stock}</p>
-                <p>{price}</p>
-            </div>
-            <div className="card__description">
-                <p>{description}</p>
-            </div>
-        </div>
+        <Container fluid>
+            <CardGroup className="m-2 d-block">
+                <Card className="m-2 border-0">
+                    <Row>
+                        <Col xs={12}>
+                            <Card.Img variant="top" src={url} alt={title} />
+                        </Col>
+                        <Col>
+                            <Card.Body>
+                                <Card.Title>{title}</Card.Title>
+                                {/* <Card.Text>Stock: {stock}</Card.Text> */}
+                                <Card.Text>S/. {price}</Card.Text>
+                                <Button variant="primary">Añadir a carrito</Button>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+            </CardGroup>
+        </Container>
     )
 }

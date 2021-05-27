@@ -1,6 +1,7 @@
 import React from 'react';
 import { ProductGridItem } from './ProductGridItem';
 import { useFetchProducts } from '../../hooks/useFetchProducts';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export const ProductGrid = ({ category }) => {
     
@@ -13,13 +14,20 @@ export const ProductGrid = ({ category }) => {
             }
 
             <div className="card-grid">
-                {
-                    products.map(product => {
-                        return (
-                            <ProductGridItem key={product.id} {...product}/>
-                        )
-                    })
-                }
+                <Container>
+                    <Row>
+                    {
+                        
+                        products.map(product => {
+                            return (
+                                <Col xs={3}>
+                                    <ProductGridItem key={product.id} {...product}/>
+                                </Col>
+                            )
+                        })
+                    }
+                    </Row>
+                </Container>
             </div>
         </>
     )
