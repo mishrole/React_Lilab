@@ -6,6 +6,7 @@ Use `lilab`;
 Create table tb_categoria (
     id_categoria integer not null auto_increment,
     nombre_categoria varchar(30) not null,
+    imagen_categoria text not null,
     primary key (id_categoria)
 );
 
@@ -26,7 +27,7 @@ Create table tb_producto (
 /* Datos */
 
 Insert into tb_categoria values
-(1, 'Frutas'), (2, 'Verduras');
+(1, 'Frutas', 'https://i0.wp.com/www.entrenamiento.com/wp-content/uploads/2016/07/frutas-saludables.jpg?fit=1600%2C1066&ssl=1'), (2, 'Verduras', 'https://www.entrenamiento.com/wp-content/uploads/2015/07/verduras-saludables.jpg');
 
 Insert into tb_producto values
 (1, 'Melocotón Paraguayo', 'El melocotón paraguayo se caracteriza por su forma aplanada y su pulpa carnosa, dulce, refrescante y blanca. El melocotón paraguayo posee las mismas propiedades nutritivas que el melocotón: buena fuente de fibra, antioxidante y vitaminas (A, B, C y K).', 6, 100, 'https://storage.googleapis.com/disfrutaverdura-media/catalog/product/cache/6b8245bae7647528e2edd9cb5e275de1/p/a/paraguayo_1.jpg', 1),

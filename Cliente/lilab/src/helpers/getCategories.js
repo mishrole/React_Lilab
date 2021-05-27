@@ -7,7 +7,8 @@ export const getCategories = async () => {
     const categories = data.map(category => {
         return {
             id: category.idCategoria,
-            title: category.nombreCategoria
+            title: category.nombreCategoria,
+            url: category.imagenCategoria
         }
     });
     

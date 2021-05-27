@@ -16,6 +16,7 @@ namespace apiLilab.Models.DbModels
         [Key]
         public int IdCategoria { get; set; }
         public string NombreCategoria { get; set; }
+        public string ImagenCategoria { get; set; }
 
         public virtual ICollection<TbProducto> TbProductos { get; set; }
     }

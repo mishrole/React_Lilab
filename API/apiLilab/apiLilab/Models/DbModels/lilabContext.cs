@@ -42,6 +42,11 @@ namespace apiLilab.Models.DbModels
 
                 entity.Property(e => e.IdCategoria).HasColumnName("id_categoria");
 
+                entity.Property(e => e.ImagenCategoria)
+                    .IsRequired()
+                    .HasColumnType("text")
+                    .HasColumnName("imagen_categoria");
+
                 entity.Property(e => e.NombreCategoria)
                     .IsRequired()
                     .HasMaxLength(30)

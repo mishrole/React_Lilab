@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, CardGroup, Card, Button } from 'react-bootstrap';
 import { generatePath, useHistory } from 'react-router-dom';
 
 export const CategoryCard = ( { category }) => {
@@ -11,13 +11,15 @@ export const CategoryCard = ( { category }) => {
     }
 
     return (
-        <Card className="text-center">
-            <Card.Header>{ category.title }</Card.Header>
-            <Card.Body>
-            </Card.Body>
-            <Card.Footer className="text-muted">
-                <Button variant="primary" onClick = { handleClick(category.id) }>Ver {category.title}</Button>
-            </Card.Footer>
-        </Card>
+        <Container fluid className="text-center">
+            <CardGroup className="m-2 d-block">
+                <Card className="m-2 border-0">
+                    <Card.Img variant="top" src={category.url} alt={category.title} />
+                    <Card.Footer className="text-muted">
+                        <Button variant="primary" onClick = { handleClick(category.id) }>Ver {category.title}</Button>
+                    </Card.Footer>
+                </Card>
+            </CardGroup>
+        </Container>
     )
 }

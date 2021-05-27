@@ -1,11 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { ProductGrid } from '../../components/product/ProductGrid';
 import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-//import MainContext from '../../context/mainContext';
 
 export const ProductGridPage = (param) => {
-    // const { categories } = useContext(MainContext);
 
     return (
         <>
