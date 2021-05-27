@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, CardGroup, Card, Button } from 'react-bootstrap';
+import { Container, CardGroup, Card, Button } from 'react-bootstrap';
 import { generatePath, useHistory } from 'react-router-dom';
 
 export const CategoryCard = ( { category }) => {
