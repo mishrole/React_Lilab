@@ -20,7 +20,7 @@ export const ProductGrid = ({ category }) => {
                         
                         products.map(product => {
                             return (
-                                <Col xs={3}>
+                                <Col xs={12} sm={6} md={4}>
                                     <ProductGridItem key={product.id} {...product}/>
                                 </Col>
                             )
